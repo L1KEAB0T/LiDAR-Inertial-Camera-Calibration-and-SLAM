@@ -1,0 +1,16 @@
+<launch>
+  <rosparam command="load" file="$(find livox_camera_calib)/config/bag_img_calib.yaml" />
+  <node 
+    pkg="livox_camera_calib"
+    type="bag_img_calib"
+    name="bag_img_calib"
+    output="screen"
+  />
+    <node 
+    pkg="rviz"
+    type="rviz"
+    name="rviz"
+    args="-d $(find livox_camera_calib)/rviz_cfg/calib.rviz"
+  />
+</launch>
+

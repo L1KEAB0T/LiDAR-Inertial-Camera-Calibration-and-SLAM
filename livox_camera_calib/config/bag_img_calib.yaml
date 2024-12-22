@@ -1,11 +1,11 @@
 bag2pcd:
-   bag_file: "/mnt/d/livox_bag/0.bag"
+   bag_file: "/mnt/d/multi_source_slam/output.bag"
    lidar_topic: "/livox/lidar"
    is_custom_msg: true
 # Data path. adjust them!
 common:
-    image_file: "/mnt/d/大学学习/大三上/CV/Final/cv_project/calibration/image/0.bmp"
-    result_file: "/home/junyu/data/calib/extrinsic.txt"
+    image_file: "/mnt/d/multi_source_slam/image/0.jpg"
+    result_file: "/mnt/d/result.txt"
 
 # Camera Parameters. Adjust them!
 camera:

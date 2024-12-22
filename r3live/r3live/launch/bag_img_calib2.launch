@@ -1,0 +1,16 @@
+<launch>
+  <rosparam command="load" file="$(find r3live)/config/bag_img_calib2.yaml" />
+  <node 
+    pkg="r3live"
+    type="bag_img_calib2"
+    name="bag_img_calib2"
+    output="screen"
+  />
+    <node 
+    pkg="rviz"
+    type="rviz"
+    name="rviz"
+    args="-d $(find r3live)/rviz_cfg/calib.rviz"
+  />
+</launch>
+

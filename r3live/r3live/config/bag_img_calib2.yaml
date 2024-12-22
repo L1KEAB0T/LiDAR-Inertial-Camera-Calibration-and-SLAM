@@ -1,0 +1,20 @@
+bag2pcd:
+   bag_file: "/mnt/d/multi_source_slam/output.bag"
+   lidar_topic: "/livox/lidar"
+   is_custom_msg: true
+# Data path. adjust them!
+common:
+    image_file: "/mnt/d/multi_source_slam/image/0.jpg"
+    result_file: "/mnt/d/extrinsic.txt"
+
+# Camera Parameters. Adjust them!
+camera:
+    camera_matrix: [910.623, 0.0, 651.66,
+                    0.0,  910.183, 365.568,
+                    0.0, 0.0, 1.0 ]
+    dist_coeffs: [0,0,0,0,0]
+
+# Calibration Parameters.!
+calib:
+    calib_config_file: "/home/junyu/catkin_ws/src/livox_camera_calib/config/config_outdoor.yaml"
+    use_rough_calib: true # set true if your initial_extrinsic is bad
